@@ -1,0 +1,287 @@
+:root {
+  --primary-color: #f47209;
+  --sec-bkgnd-color: rgb(20, 20, 20);
+}
+
+body {
+  background: black;
+  margin: 0;
+}
+
+section {
+  padding: 2em;
+  color: white;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-family: "Source Sans Pro";
+  font-size: 2em;
+  margin: 0;
+}
+
+h3 {
+  color: #969696;
+  font-family: "Source Sans Pro";
+  font-size: 1.5em;
+  margin: 0.5em 0 0 0;
+}
+
+h4 {
+  color: var(--primary-color);
+  font-family: "Source Sans Pro";
+  font-size: 1.2em;
+  margin: 0;
+  margin-top: 0.2em;
+}
+
+p {
+  font-family: "Fira Code";
+  font-size: 1em;
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar {
+  background: black;
+  padding: 1em;
+}
+
+.navbar .logo {
+  font-family: "Nasalization";
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 3.5em;
+  margin: 0;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+  height: 3.5em;
+}
+
+.hero {
+  text-align: left;
+  padding-bottom: 1em;
+  padding-right: 0;
+}
+
+.left-col .hi {
+  font-family: "Source Sans Pro";
+  color: var(--primary-color);
+  font-size: 2em;
+  margin: 0;
+}
+
+.left-col .name {
+  font-family: "Source Sans Pro";
+  color: white;
+  font-size: 3em;
+  margin: 0;
+}
+
+.left-col .eng {
+  font-family: "Source Sans Pro";
+  color: #646464;
+  font-size: 2em;
+  margin: 0;
+  text-align: left;
+}
+
+.right-col .hero-img {
+  width: 100%;
+  margin-top: 2em;
+}
+
+section.aboutMe-section {
+  background: var(--sec-bkgnd-color);
+}
+
+section.aboutMe-section .src-img {
+  width: 12em;
+  border-radius: 6em;
+  display: block;
+  margin: 1em auto 1.5em auto;
+}
+
+section.aboutMe-section .media-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.aboutMe-section .media-imgs img {
+  height: 3em;
+  cursor: pointer;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+section.aboutMe-section .media-imgs a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section.aboutMe-section .media-imgs a .cv-button {
+  color: var(--primary-color);
+  font-family: "Nasalization";
+  font-size: 2em;
+  position: relative;
+  top: 15%;
+  margin: 0 0 0 0.2em;
+}
+
+section.aboutMe-section h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.2em;
+}
+
+section.aboutMe-section .skills-img {
+  width: 3em;
+  margin: 0 0.25em 0.5em 0.25em;
+}
+
+section.experience-section {
+  padding-bottom: 0;
+}
+
+section.experience-section .experience-img {
+  height: 10em;
+  border-radius: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+section.experience-section li {
+  background: var(--sec-bkgnd-color);
+  padding: 2em 1em;
+  margin: 0 auto 3em auto;
+  border-radius: 1.5em;
+}
+
+section.experience-section .link-project img {
+  width: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+section.projects-section {
+  background-color: var(--sec-bkgnd-color);
+  padding-bottom: 0.001em;
+}
+
+section.projects-section .experience-img {
+  width: 93%;
+  border-radius: 0.7em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.projects-section li {
+  background: black;
+  padding: 2em 1em;
+  margin: 0 auto 3em auto;
+  border-radius: 1.5em;
+}
+
+section.projects-section .link-project img {
+  width: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+section.projects-section .double-ext-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.projects-section .double-ext-link img {
+  height: 2em;
+  cursor: pointer;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+section.addInfo-section p {
+  text-align: left;
+}
+
+section.footer {
+  background: var(--sec-bkgnd-color);
+  padding: 0.5em;
+}
+
+section.footer p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .experience-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .projects-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */
