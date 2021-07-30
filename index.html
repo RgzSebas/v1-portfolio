@@ -2,41 +2,447 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SRC</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>SRC - Sebastian Rodriguez Castro</title>
+    <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Nasalization|Fira Code|Source Sans Pro"
     />
+    <script
+      src="https://kit.fontawesome.com/ef2fde5e7c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1 class="logo">SRC</h1>
+    <!-- -->
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <div class="container">
+        <h1 class="logo">SRC</h1>
 
-    <ul>
-      <li><a href="about.asp">About</a></li>
-      <li><a href="projects.asp">Projects</a></li>
-      <li><a href="resume.asp">Resume</a></li>
-    </ul>
-    <button onclick="topFunction()" id="topBtn" title="top">Top</button>
+        <img
+          id="mobile-menu-cta"
+          class="mobile-menu"
+          src="images/menu.png"
+          alt="Open Navigation Menu"
+        />
 
-    <img
-      class="engine-img"
-      src="images/engine.png"
-      alt="Radial Aircraft Engine Blueprint"
-    />
-    <p class="hi">Hi! I'm</p>
-    <p class="myName">Sebastián Rodríguez Castro</p>
-    <p class="mechEng">Future Mechatronics Engineer</p>
+        <nav>
+          <!-- TODO Add Image-->
+          <img
+            id="mobile-menu-exit"
+            class="mobile-menu-exit"
+            src="images/"
+            alt="Close Navigation Menu"
+          />
 
-    <div class="rectangle_aboutMe"></div>
-    <h2 class="aboutMe">About Me</h2>
+          <ul class="navigation-options">
+            <!-- TODO Link to Section-->
+            <li><a href="#">About Me</a></li>
+            <!-- TODO Link to Section-->
+            <li><a href="#">Experience</a></li>
+            <!-- TODO Link to PDF-->
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
-    <div class="rectangle_featuredProj"></div>
-    <h2 class="myProjects">My Projects</h2>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="hi">Hi! I'm</p>
+          <h1 class="name">Sebastián Rodríguez Castro</h1>
+          <p class="eng">Future Mechatronics Engineer</p>
+        </div>
 
-    <div class="rectangle_otherProj"></div>
-    <h2 class="otherProj">Other Projects</h2>
+        <div class="right-col">
+          <img
+            src="images/engine.png"
+            class="hero-img"
+            alt="Radial Aricraft Engine Blueprints"
+          />
+        </div>
+      </div>
+    </section>
 
-    <div class="rectangle_footer"></div>
+    <!-- About Me -->
+    <section class="aboutMe-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="left-col">
+          <img
+            src="images/photoSRC.jpg"
+            class="src-img"
+            alt="Sebastian's Img"
+          />
+          <div class="media-imgs">
+            <a href="#">
+              <img
+                class="media-img"
+                src="images/links/linkedin.png"
+                alt="Sebastian's LinkedIn"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="media-img"
+                src="images/links/github.png"
+                alt="Sebastian's Githunb"
+              />
+            </a>
+            <a href="#">
+              <p class="cv-button">CV</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="right-col">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Reprehenderit deleniti ratione blanditiis nemo voluptatum, aut
+            numquam, accusamus fugit, delectus facilis error nihil cumque iure
+            ipsa reiciendis ipsum doloremque quos ut?
+          </p>
+        </div>
+
+        <div class="skills">
+          <h3>Skils</h3>
+          <img
+            src="images/skills_logos/sw.png"
+            class="skills-img"
+            alt="Solid Works Logo"
+          />
+          <img
+            src="images/skills_logos/python.png"
+            class="skills-img"
+            alt="Python Logo"
+          />
+          <img
+            src="images/skills_logos/matlab.png"
+            class="skills-img"
+            alt="Matlab Logo"
+          />
+          <img
+            src="images/skills_logos/arduino.png"
+            class="skills-img"
+            alt="Arduino Logo"
+          />
+          <img
+            src="images/skills_logos/c++.png"
+            class="skills-img"
+            alt="C++ Logo"
+          />
+          <img
+            src="images/skills_logos/altium.png"
+            class="skills-img"
+            alt="Altium Logo"
+          />
+          <img
+            src="images/skills_logos/mysql.png"
+            class="skills-img"
+            alt="mySql Logo"
+          />
+          <img
+            src="images/skills_logos/edupack.png"
+            class="skills-img"
+            alt="EduPack Logo"
+          />
+          <img
+            src="images/skills_logos/html.png"
+            class="skills-img"
+            alt="HTML Logo"
+          />
+          <img
+            src="images/skills_logos/css.png"
+            class="skills-img"
+            alt="CSS Logo"
+          />
+          <img
+            src="images/skills_logos/ms.png"
+            class="skills-img"
+            alt="Microsoft Office Logo"
+          />
+          <img
+            src="images/skills_logos/git.png"
+            class="skills-img"
+            alt="Git Logo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Where I've Worked -->
+    <section class="experience-section">
+      <div class="container">
+        <h2>Where I've Worked</h2>
+        <div class="left-col">
+          <ul>
+            <li>
+              <img
+                class="experience-img"
+                src="images/experience/stratosnet.jpg"
+                alt="StratosNet Logo"
+              />
+              <h3>StratosNet Telecom</h3>
+              <h4>Co-Founder | Since 2021</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Reprehenderit deleniti ratione blanditiis nemo voluptatum, aut
+                numquam, accusamus fugit, delectus facilis error nihil cumque
+                iure ipsa reiciendis ipsum doloremque quos ut?
+              </p>
+              <a href="#" class="link-project">
+                <img src="images/links/ext-link.png" alt="Link to project" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- To Do -->
+        <div class="right-col">
+          <ul>
+            <li>
+              <img
+                class="experience-img"
+                src="images/experience/hardanflex.png"
+                alt="Hardanflex Logo"
+              />
+              <h3>Hardanflex</h3>
+              <h4>Manufacturing Design/Quality Intern | Summer 2018</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Reprehenderit deleniti ratione blanditiis nemo voluptatum, aut
+                numquam, accusamus fugit, delectus facilis error nihil cumque
+                iure ipsa reiciendis ipsum doloremque quos ut?
+              </p>
+              <a href="#" class="link-project">
+                <img src="images/links/ext-link.png" alt="Link to project" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Projects -->
+    <section class="projects-section">
+      <div class="container">
+        <h2>My Projects</h2>
+
+        <div class="left-col">
+          <ul>
+            <li>
+              <img
+                class="experience-img"
+                src="images/experience/spes_sat2.png"
+                alt="Bartolomeo CubeSat Img"
+              />
+              <h3>SPES Nanosatellite</h3>
+              <h4>Electronics & Design Integrator | 2020</h4>
+              <p>
+                Proposal aimed to tackle the Sustainable Development Goals of
+                the UN. Currently one of the three worldwide finalists and if
+                selected, the first Mexican Nanosatellite to operate attached to
+                the ISS. Expected launch 2022/2023.
+              </p>
+              <a href="#" class="link-project">
+                <img src="images/links/ext-link.png" alt="Link to project" />
+              </a>
+            </li>
+
+            <li>
+              <img
+                class="experience-img"
+                src="images/experience/rgb.png"
+                alt="Alexa Enabled RGB Controller Img"
+              />
+              <h3>Alexa Enabled RGB Controller</h3>
+              <h4>Self-built | June 2021</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Reprehenderit deleniti ratione blanditiis nemo voluptatum, aut
+                numquam, accusamus fugit, delectus facilis error nihil cumque
+                iure ipsa reiciendis ipsum doloremque quos ut?
+              </p>
+              <a href="#" class="link-project">
+                <img src="images/links/github.png" alt="Link to project" />
+              </a>
+            </li>
+
+            <li>
+              <img
+                class="experience-img"
+                src="images/experience/thermometer.png"
+                alt="IoT Beer Temp Control Img"
+              />
+              <h3>IoT Beer Temp Control</h3>
+              <h4>Self-built | May 2021</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Reprehenderit deleniti ratione blanditiis nemo voluptatum, aut
+                numquam, accusamus fugit, delectus facilis error nihil cumque
+                iure ipsa reiciendis ipsum doloremque quos ut?
+              </p>
+              <a href="#" class="link-project">
+                <img src="images/links/github.png" alt="Link to project" />
+              </a>
+            </li>
+
+            <li>
+              <img
+                class="experience-img"
+                src="images/experience/webpage.png"
+                alt="This Webage Img"
+              />
+              <h3>This Webpage</h3>
+              <h4>Self-built | Jule 2021</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Reprehenderit deleniti ratione blanditiis nemo voluptatum, aut
+                numquam, accusamus fugit, delectus facilis error nihil cumque
+                iure ipsa reiciendis ipsum doloremque quos ut?
+              </p>
+              <a href="#" class="link-project">
+                <img src="images/links/github.png" alt="Link to project" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="right-col">
+          <ul>
+            <li>
+              <img
+                class="experience-img"
+                src="images/experience/first.png"
+                alt="FIRST FRC Img"
+              />
+              <h3>First Robotics Competition</h3>
+              <h4>Lead Project Manager | Aug '17 - Mar '18</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Reprehenderit deleniti ratione blanditiis nemo voluptatum, aut
+                numquam, accusamus fugit, delectus facilis error nihil cumque
+                iure ipsa reiciendis ipsum doloremque quos ut?
+              </p>
+              <a href="#" class="link-project">
+                <img src="images/links/youtube.png" alt="Link to project" />
+              </a>
+            </li>
+
+            <li>
+              <img
+                class="experience-img"
+                src="images/experience/asrs.png"
+                alt="AS/RS Img"
+              />
+              <h3>Automated Storage & Retrieval System (AS/RS)</h3>
+              <h4>Mechanical Designer | Feb '21 - Jun '21</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Reprehenderit deleniti ratione blanditiis nemo voluptatum, aut
+                numquam, accusamus fugit, delectus facilis error nihil cumque
+                iure ipsa reiciendis ipsum doloremque quos ut?
+              </p>
+              <div class="double-ext-link">
+                <a href="#" class="link-project">
+                  <img src="images/links/ext-link.png" alt="Link to project" />
+                </a>
+                <a href="#" class="link-project">
+                  <img src="images/links/github.png" alt="Link to project" />
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <img
+                class="experience-img"
+                src="images/experience/beer.png"
+                alt="Beer Brewing Img"
+              />
+              <h3>Beer Brewing [Hefeweizenbier]</h3>
+              <h4>My father & I | Feb '21 - Jun '21</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Reprehenderit deleniti ratione blanditiis nemo voluptatum, aut
+                numquam, accusamus fugit, delectus facilis error nihil cumque
+                iure ipsa reiciendis ipsum doloremque quos ut?
+              </p>
+              <a href="#" class="link-project">
+                <img src="images/links/no_link.png" alt="No Link" />
+              </a>
+            </li>
+
+            <li>
+              <img
+                class="experience-img"
+                src="images/experience/drone.png"
+                alt="Custom 250mm Racing Quadcopter Img"
+              />
+              <h3>Custom 250mm Racing Quadcopter</h3>
+              <h4>Self-built | Feb '19 - Mar '19</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Reprehenderit deleniti ratione blanditiis nemo voluptatum, aut
+                numquam, accusamus fugit, delectus facilis error nihil cumque
+                iure ipsa reiciendis ipsum doloremque quos ut?
+              </p>
+              <a href="#" class="link-project">
+                <img src="images/links/no_link.png" alt="No Link" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Info -->
+    <section class="addInfo-section">
+      <div class="container">
+        <h2>Additional Info</h2>
+        <!-- To Do -->
+        <ul>
+          <li>
+            <p>Spanish (native), English (C1), German (B2), French (A2)</p>
+          </li>
+          <li>
+            <p>DAAD</p>
+          </li>
+          <li>
+            <p>Hueber</p>
+          </li>
+          <li>
+            <p>
+              Great organization, communication, teamwork, and management
+              skills. Eager to learn and make a better future
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="container">
+        <!-- To Do -->
+        <p>Made by SRC on Earth</p>
+      </div>
+    </section>
+
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
   </body>
 </html>
